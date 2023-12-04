@@ -4,21 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gta 6 Countdown</title>
+    <meta name="description" content="Countdown to GTA 6 Trailer" />
+    <meta name="keywords" content="GTA 6, GTA VI, GTA 6 Trailer, GTA 6 Countdown" />
+    <meta name="author" content="Cooper" />
     <script>
       const countDownDate = new Date("Dec 5, 2023 09:00:00 EST").getTime();
       function updateCountdown() {
         const now = new Date().getTime();
         const distance = countDownDate - now;
 
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
         const hours = Math.floor(
           (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
         );
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        document.getElementById("countdown").innerText =
-          days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+        const text = `${hours}h ${minutes}m ${seconds}s`;
+        document.getElementById("countdown").innerText = text
+        document.title = `${text} - Gta 6 Countdown`
 
         if (distance < 0) {
           clearInterval(x);
