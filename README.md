@@ -1,5 +1,6 @@
 # GTA6-COUNTDOWN
-Realtime countdown until the GTA 6 trailer releases
+
+Realtime countdown until the GTA 6 trailer releases. You can see it here: <https://cooptrue.github.io/GTA6-COUNTDOWN/>
 
 Hosted on github pages
 
